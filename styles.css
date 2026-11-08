@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap');
+
+    /* Keep the page readable over the fixed background image. */
+    html {
+      background: #f5f8fb;
+    }
+
+    body {
+      background: transparent !important;
+    }
+
+    .page-watermark-pattern {
+      display: none !important;
+    }
+
+    .page-watermark-fixed {
+      display: block !important;
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image: url("B2B_BG.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    /* Keep the header readable while allowing the background to show through elsewhere. */
+    .glass-header {
+      background: rgb(255 255 255 / 94%) !important;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    #donate {
+      background: linear-gradient(135deg, #153a52 0%, #1d5870 58%, #247e85 100%);
+    }
+
+    main div[class*="rounded-"][class*="border-slate-200"]:not([class*="bg-"]) {
+      background-color: rgb(255 255 255 / 92%);
+    }
+
+    #toast {
+      background-color: #17384a;
+    }
+
+    footer {
+      background: #12384a;
+    }
+
+    footer .rounded-2xl {
+      background-color: rgb(255 255 255 / 8%);
+    }
+
+    #site-header nav a[href="#donate"],
+    #mobile-menu a[href="#donate"],
+    #donate-btn,
+    #volunteer-form button[type="submit"],
+    #contact-form button[type="submit"],
+    #payment-confirm-btn,
+    a.fixed[href="#donate"] {
+      background-color: #2563eb !important;
+      color: #ffffff !important;
+    }
+
+    #site-header nav a[href="#donate"]:hover,
+    #mobile-menu a[href="#donate"]:hover,
+    #donate-btn:hover,
+    #volunteer-form button[type="submit"]:hover,
+    #contact-form button[type="submit"]:hover,
+    #payment-confirm-btn:hover,
+    a.fixed[href="#donate"]:hover {
+      background-color: #1d4ed8 !important;
+    }
+    .brand-title {
+      display: flex;
+      align-items: baseline;
+      gap: 0;
+      white-space: nowrap;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .brand-title-header {
+      font-size: clamp(0.984rem, 2.58vw, 1.44rem);
+      letter-spacing: -0.045em;
+    }
+
+    .brand-title-footer {
+      font-size: clamp(1rem, 2.4vw, 1.25rem);
+      letter-spacing: -0.035em;
+    }
+
+    .brand-title-build {
+      color: #38B6CD;
+    }
+
+    .brand-title-number {
+      color: #7CBD43;
+    }
+
+    .brand-title-better {
+      color: #ffffff;
+      -webkit-text-stroke: 1.5px #1B4F72;
+      paint-order: stroke fill;
+    }
+
+    .brand-title-foundation {
+      margin-left: 0.32em;
+      color: #ffffff;
+      -webkit-text-stroke: 1.5px #1B4F72;
+      paint-order: stroke fill;
+    }
+
+    .header-tagline {
+      margin-top: 4px;
+      color: #9E2A2B;
+      font-family: "Caveat", cursive;
+      font-size: clamp(1.05rem, 2.4vw, 1.2rem);
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1;
+      text-align: right;
+    }
+
+    .header-brand-logo {
+      width: 4.5rem;
+      height: 4.5rem;
+      background-color: #ffffff;
+    }
+
+    .volunteer-cta {
+      background-color: #d9f99d !important;
+      border-color: #a3e635 !important;
+    }
+
+    .volunteer-cta:hover {
+      background-color: #bef264 !important;
+      border-color: #84cc16 !important;
+    }
+
+    .volunteer-application-toggle {
+      background-color: #fce7f3 !important;
+      color: #831843 !important;
+      border: 1px solid #f9a8d4;
+    }
+
+    .volunteer-application-toggle:hover {
+      background-color: #fbcfe8 !important;
+      border-color: #f472b6;
+    }
